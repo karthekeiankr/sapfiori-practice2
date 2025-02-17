@@ -1,0 +1,39 @@
+{
+
+    "EmployeeData":[
+{
+
+    "Name":"Shiva",
+    "Role":"10",
+    "Skills":"1",
+    "Phone":"56",
+    "Address":"Hyderabad"
+},
+{
+
+    "Name":"Shiva",
+    "Role":"10",
+    "Skills":"2",
+    "Phone":"56",
+    "Address":"Hyderabad"
+},
+{
+
+    "Name":"Shiva",
+   "Role":"10",
+    "Skills":"3",
+    "Phone":"56",
+    "Address":"Hyderabad"
+},
+{
+
+    "Name":"Shiva",
+    "Role":"10",
+    "Skills":"4",
+    "Phone":"56",
+    "Address":"Hyderabad"
+}
+
+
+    ]
+}

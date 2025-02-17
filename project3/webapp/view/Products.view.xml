@@ -1,0 +1,45 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="project3.controller.Products"
+    xmlns="sap.m">
+
+    <Page id="productsPage" title="Products">
+        <content>
+            <VBox>
+                <SearchField width="100%" placeholder="Search products..." liveChange="onSearch"/>
+                <Button text="Go to Cart" press="onGoToCart"/>
+
+                <Table id="productTable" items="{data>/Products}" growing="true" growingScrollToLoad="true">
+                    <columns>
+                        <Column>
+                            <Text text="Product Name"/>
+                        </Column>
+                        <Column>
+                            <Text text="Description"/>
+                        </Column>
+                        <Column>
+                            <Text text="Price"/>
+                        </Column>
+                        <Column>
+                            <Text text="Stock"/>
+                        </Column>
+                        <Column>
+                            <Text text="Action"/>
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem>
+                            <cells>
+                                <Text text="{data>Name}"/>
+                                <Text text="{data>Description}"/>
+                                <Text text="{data>Price} USD"/>
+                                <ObjectStatus text="{data>StockStatus}" state="{data>StockState}"/>
+                                <Button text="Add to Cart" press="onAddToCart"/>
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

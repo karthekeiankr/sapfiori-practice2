@@ -1,0 +1,40 @@
+<mvc:View controllerName="project4.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <Input
+            id="customInput"
+            showValueHelp="true"
+            valueHelpRequest="onF4HelpForCustomField"
+            placeholder="Select Value"/>
+
+<Table id="orderTable"
+       items="{/Orders}"
+       inset="false"
+       mode="SingleSelectMaster">
+    <headerToolbar>
+        <Toolbar>
+            <Title text="Orders" />
+        </Toolbar>
+    </headerToolbar>
+    <columns>
+        <Column>
+            <Text text="Order ID" />
+        </Column>
+    </columns>
+    <items>
+        <ColumnListItem>
+            <cells>
+                <Text text="{OrderID}" />
+            </cells>
+        </ColumnListItem>
+    </items>
+</Table>
+
+<Button text="Update Phone" press=".onUpdatePhone"/>
+<Toolbar>
+    <Title text="Total Phone:"/>
+    <Title id="totalPhone" text="0"/>
+</Toolbar>
+    </Page>
+</mvc:View>

@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Bar>
+        <contentMiddle>
+            <Text text="Total:" />
+            <Text id="totalValue" text="{totalModel>/total}" />
+        </contentMiddle>
+    </Bar>
+</core:FragmentDefinition>

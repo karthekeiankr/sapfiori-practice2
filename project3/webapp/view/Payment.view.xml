@@ -1,0 +1,12 @@
+<mvc:View
+    controllerName="project3.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    
+    <Page title="Deals">
+        <content>
+            <Text text="This is the Payment Page"/>
+        </content>
+    </Page>
+</mvc:View>

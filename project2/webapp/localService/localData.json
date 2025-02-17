@@ -1,0 +1,39 @@
+{
+
+    "EmployeeData":[
+{
+
+    "Name":"Shiva",
+    "Role":"Developers",
+    "Skills":"UI5",
+    "Phone":"8899334456",
+    "Address":"Hyderabad"
+},
+{
+
+    "Name":"Shiva",
+    "Role":"Developers",
+    "Skills":"UI5",
+    "Phone":"8899334456",
+    "Address":"Hyderabad"
+},
+{
+
+    "Name":"Shiva",
+    "Role":"Developers",
+    "Skills":"UI5",
+    "Phone":"8899334456",
+    "Address":"Hyderabad"
+},
+{
+
+    "Name":"Shiva",
+    "Role":"Developers",
+    "Skills":"UI5",
+    "Phone":"8899334456",
+    "Address":"Hyderabad"
+}
+
+
+    ]
+}

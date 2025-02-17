@@ -1,0 +1,37 @@
+{
+  "fileName": "id_1738055943595_108_addXML",
+  "fileType": "change",
+  "changeType": "addXML",
+  "moduleName": "customer/app/demoui/changes/fragments/button2.fragment.xml",
+  "reference": "customer.app.demoui",
+  "packageName": "$TMP",
+  "content": {
+    "targetAggregation": "content",
+    "index": 3,
+    "fragmentPath": "fragments/button2.fragment.xml"
+  },
+  "selector": {
+    "id": "mainView--ovpGlobalFilter",
+    "idIsLocal": false
+  },
+  "layer": "CUSTOMER_BASE",
+  "texts": {},
+  "namespace": "apps/fin.ar.manager.ovp/adapt/customer.app.demoui/changes/",
+  "projectId": "customer.app.demoui",
+  "creation": "2025-01-28T09:24:28.285Z",
+  "originalLanguage": "EN",
+  "support": {
+    "generator": "@sap-ux/control-property-editor",
+    "service": "",
+    "user": "",
+    "sapui5Version": "1.84.49",
+    "sourceChangeFileName": "",
+    "compositeCommand": "",
+    "command": "addXML"
+  },
+  "oDataInformation": {},
+  "dependentSelector": {},
+  "jsOnly": false,
+  "variantReference": "",
+  "appDescriptorChange": false
+}

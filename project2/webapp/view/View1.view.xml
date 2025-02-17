@@ -1,0 +1,58 @@
+<mvc:View controllerName="project2.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+
+    xmlns="sap.m">
+   <Page id="page" title="Download as PDF" titleAlignment="Center">
+<content>
+<Input
+            id="customInput"
+            showValueHelp="true"
+            valueHelpRequest="onF4HelpForCustomField"
+            placeholder="Select Value"/>
+
+<Table items="{ path: 'data>/EmployeeData'}"
+class="tablecss" id="table">
+<headerToolbar>
+<Toolbar class="btncss">
+<Text text="Table Download"/>
+<Button icon="sap-icon://download" press="downloadpdf"/>
+</Toolbar>
+</headerToolbar>
+<columns>
+<Column>
+<Text text="Name"/>
+</Column>
+<Column>
+<Text text="Role"/>
+</Column>
+<Column>
+<Text text="Skills"/>
+</Column>
+<Column>
+<Text text="Phone"/>
+</Column>
+<Column>
+<Text text="Address"/>
+</Column>
+</columns>
+<items>
+<ColumnListItem class="listcss">
+<cells>
+<Text text="{data>Name}"/>
+<Text text="{data>Role}"/>
+<Text text="{data>Skills}"/>
+<Text id="idPhone" text="{data>Phone}"/>
+<Text text="{data>Address}"/>
+</cells>
+</ColumnListItem>
+</items>
+</Table>
+<Button text="Update Phone" press=".onUpdatePhone"/>
+<Toolbar>
+    <Title text="Total Phone:"/>
+    <Title id="totalPhone" text="0"/>
+</Toolbar>
+
+</content>
+</Page>
+</mvc:View>

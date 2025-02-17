@@ -1,0 +1,140 @@
+<mvc:View
+    controllerName="project3.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:smartfilterbar="sap.ui.comp.smartfilterbar"
+    xmlns:smarttable="sap.ui.comp.smarttable"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <VBox>
+                <!-- Header Fragment -->
+                <core:Fragment
+                    fragmentName="project3.view.header"
+                    type="XML"
+                />
+                <IconTabBar
+                    id="tabBar"
+                    selectedKey="products"
+                    select=".onTabSelect"
+                >
+                    <items>
+                        <IconTabFilter
+                            key="products"
+                            text="Products"
+                            icon="sap-icon://home"
+                        />
+                        <IconTabFilter
+                            key="cart"
+                            text="Cart"
+                            icon="sap-icon://cart"
+                        />
+                        <IconTabFilter
+                            key="payment"
+                            text="Payment"
+                            icon="sap-icon://payment-approval"
+                        />
+                    </items>
+                </IconTabBar>
+
+                <Carousel
+                    ariaLabelledBy="carouselTitle"
+                    class="sapUiContentPadding"
+                    loop="true"
+                >
+                    <Image
+                        src="https://sapui5.netweaver.ondemand.com/sdk/test-resources/sap/ui/documentation/sdk/images/HT-6100-large.jpg"
+                        alt="Example picture of speakers"
+                    />
+                    <Image
+                        src="https://sapui5.netweaver.ondemand.com/sdk/test-resources/sap/ui/documentation/sdk/images/HT-6120-large.jpg"
+                        alt="Example picture of USB flash drive"
+                    />
+                    <Image
+                        src="https://sapui5.netweaver.ondemand.com/sdk/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg"
+                        alt="Example picture of spotlight"
+                    />
+                </Carousel>
+                <Toolbar>
+                    <Text text="Search: " />
+                    <Input
+                        id="searchId"
+                        placeholder="Search by Id"
+                        liveChange=".onSearch"
+                    />
+                    <Input
+                        id="searchMaterialName"
+                        placeholder="Search by Material Name"
+                        liveChange=".onSearch"
+                    />
+                    <Input
+                        id="searchMaterialDes"
+                        placeholder="Search by Material Description"
+                        liveChange=".onSearch"
+                    />
+                    <Input
+                        id="searchQuantity"
+                        placeholder="Search by Quantity"
+                        liveChange=".onSearch"
+                    />
+                    <Input
+                        id="searchCity"
+                        placeholder="Search by City"
+                        liveChange=".onSearch"
+                    />
+                </Toolbar>
+                <Button
+                    text="Update Phone"
+                    press=".onUpdatePhone"
+                />
+                <!-- Table -->
+                <Table
+                    id="table"
+                    items="{/laptopsSet}"
+                    class="tablecss"
+                >
+                    <columns>
+                        <Column>
+                            <Text text="Id" />
+                        </Column>
+                        <Column>
+                            <Text text="Material Name" />
+                        </Column>
+                        <Column>
+                            <Text text="Material Description" />
+                        </Column>
+                        <Column>
+                            <Text text="Quantity" />
+                        </Column>
+                        <Column>
+                            <Text text="City" />
+                        </Column>
+                    </columns>
+
+                    <items>
+                        <ColumnListItem>
+                            <cells>
+                                <Text text="{Id}" />
+                                <Text text="{Material_Name}" />
+                                <Text text="{Material_Des}" />
+                                <Text text="{Quantity}" />
+                                <Text text="{City}" />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+
+                <!-- Footer Fragment -->
+                <core:Fragment
+                    fragmentName="project3.view.footer"
+                    type="XML"
+                />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+    <!-- Button to trigger the value help -->
+    <Button id="button2" text="Press" press=".extension.customer.app.demoui.button.onPress"></Button>
+    <Button id="button3" text="Click" press=".extension.customer.app.demoui.button.onClick"></Button>
+
+    <!-- Input field with value help -->
+    <Input id="input1" valueHelpRequest=".extension.customer.app.demoui.button.onOpenValueHelp" showValueHelp="true" placeholder="Select Person" />
+</core:FragmentDefinition>

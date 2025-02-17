@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <!-- Footer -->
+    <Bar>
+        <contentMiddle>
+            	<HBox>
+                    <Link text="support@gmail.com"></Link>
+                    <Text text=" Ph: " />
+                    <Link text="9378290101" href="tel:9378290101"/>
+                </HBox>
+        </contentMiddle>
+    </Bar>
+</core:FragmentDefinition>

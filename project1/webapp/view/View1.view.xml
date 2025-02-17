@@ -1,0 +1,36 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:smartFilter="sap.ui.comp.smartfilterbar"
+  xmlns:smartTable="sap.ui.comp.smarttable"
+  controllerName="project1.controller.View1">
+  <Page id="pageId" title="Smart Table Example">
+    <content>
+       
+   
+
+
+
+
+  <!-- Smart Filter Bar -->
+  <smartFilter:SmartFilterBar
+    id="smartFilterBar"
+    entitySet="ZCDS_SelectionFields"
+    persistencyKey="ProductListFilter"
+    useToolbar="true"
+    search="onSearch" />
+
+
+  <!-- Smart Table -->
+  <smartTable:SmartTable
+    id="smartTable"
+    entitySet="ZCDS_SelectionFields"
+    tableType="ResponsiveTable"
+    enableAutoBinding="true"
+    useExportToExcel="true"
+    showRowCount="true"
+    smartFilterId="smartFilterBar"
+    ignoreFromPersonalisation="false"/>
+</content>
+</Page>
+</mvc:View>

@@ -1,0 +1,24 @@
+{
+    "Products": [
+        { "Name": "Laptop X", "Price": "1200", "Description": "High-performance laptop", "StockStatus": "In Stock", "StockState": "Success" },
+        { "Name": "Phone Y", "Price": "800", "Description": "Latest smartphone", "StockStatus": "Low Stock", "StockState": "Warning" },
+        { "Name": "Tablet Z", "Price": "600", "Description": "Powerful tablet for work", "StockStatus": "Out of Stock", "StockState": "Error" },
+        { "Name": "Smartwatch A", "Price": "250", "Description": "Fitness tracking smartwatch", "StockStatus": "In Stock", "StockState": "Success" },
+        { "Name": "Wireless Headphones", "Price": "150", "Description": "Noise-canceling over-ear headphones", "StockStatus": "In Stock", "StockState": "Success" },
+        { "Name": "Gaming Laptop Pro", "Price": "2200", "Description": "High-end gaming laptop", "StockStatus": "Low Stock", "StockState": "Warning" },
+        { "Name": "Phone Z Ultra", "Price": "999", "Description": "Flagship smartphone with 5G", "StockStatus": "In Stock", "StockState": "Success" },
+        { "Name": "Smart TV 55\"", "Price": "750", "Description": "4K UHD Smart TV", "StockStatus": "In Stock", "StockState": "Success" },
+        { "Name": "Bluetooth Speaker", "Price": "100", "Description": "Portable wireless speaker", "StockStatus": "Low Stock", "StockState": "Warning" },
+        { "Name": "Tablet Pro", "Price": "850", "Description": "Business-class tablet", "StockStatus": "Out of Stock", "StockState": "Error" },
+        { "Name": "Mechanical Keyboard", "Price": "120", "Description": "RGB backlit mechanical keyboard", "StockStatus": "In Stock", "StockState": "Success" },
+        { "Name": "Wireless Mouse", "Price": "60", "Description": "Ergonomic wireless mouse", "StockStatus": "In Stock", "StockState": "Success" },
+        { "Name": "Smartphone Max", "Price": "1150", "Description": "Top-tier smartphone with AI camera", "StockStatus": "Low Stock", "StockState": "Warning" },
+        { "Name": "Laptop Ultra", "Price": "1750", "Description": "Lightweight ultra-thin laptop", "StockStatus": "In Stock", "StockState": "Success" },
+        { "Name": "Gaming Headset", "Price": "180", "Description": "Surround sound gaming headset", "StockStatus": "In Stock", "StockState": "Success" },
+        { "Name": "Drone X", "Price": "1400", "Description": "Professional drone with 4K camera", "StockStatus": "Low Stock", "StockState": "Warning" },
+        { "Name": "Action Camera", "Price": "320", "Description": "Waterproof action camera", "StockStatus": "In Stock", "StockState": "Success" },
+        { "Name": "Wireless Earbuds", "Price": "130", "Description": "True wireless noise-canceling earbuds", "StockStatus": "Out of Stock", "StockState": "Error" },
+        { "Name": "Smartphone Lite", "Price": "500", "Description": "Budget-friendly smartphone", "StockStatus": "In Stock", "StockState": "Success" },
+        { "Name": "Laptop Business", "Price": "1450", "Description": "Business laptop with high security", "StockStatus": "In Stock", "StockState": "Success" }
+    ]
+}
