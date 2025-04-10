@@ -1,0 +1,39 @@
+<mvc:View
+  controllerName="xlupload.controller.View1"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:unified="sap.ui.unified"
+  displayBlock="true">
+
+  <Page title="Upload CSV or Excel">
+    <content>
+      <VBox class="sapUiSmallMargin">
+        <unified:FileUploader
+          id="fileUploader"
+          fileType="csv,xlsx"
+          change="onFileUpload"
+          width="300px"
+          placeholder="Choose CSV or Excel file..." />
+
+        <Button text="Upload Data" press="onUploadData" />
+
+        <Table id="dataTable" items="{/fileData}">
+          <columns>
+            <Column><Text text="ID" /></Column>
+            <Column><Text text="NAME" /></Column>
+            <Column><Text text="CITY" /></Column>
+          </columns>
+          <items>
+            <ColumnListItem>
+              <cells>
+                <Text text="{Id}" />
+                <Text text="{Name}" />
+                <Text text="{City}" />
+              </cells>
+            </ColumnListItem>
+          </items>
+        </Table>
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

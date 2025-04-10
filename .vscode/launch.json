@@ -2,10 +2,17 @@
   "version": "0.2.0",
   "configurations": [
     {
+<<<<<<< HEAD
       "name": "Start project2",
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}/project2",
+=======
+      "name": "Start xl_upload",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/xl_upload",
+>>>>>>> 7baec2c (added projects)
       "runtimeExecutable": "npx",
       "windows": {
         "runtimeExecutable": "npx.cmd"
@@ -16,7 +23,11 @@
       ],
       "args": [
         "--open",
+<<<<<<< HEAD
         "test/flpSandbox.html#project2-tile"
+=======
+        "test/flpSandbox.html#xlupload-display"
+>>>>>>> 7baec2c (added projects)
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
@@ -24,6 +35,7 @@
       "env": {
         "DEBUG": "--inspect",
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+<<<<<<< HEAD
         "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/project2\"}"
       }
     },
@@ -32,6 +44,16 @@
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}/project2",
+=======
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/xl_upload\"}"
+      }
+    },
+    {
+      "name": "Start xl_upload Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/xl_upload",
+>>>>>>> 7baec2c (added projects)
       "runtimeExecutable": "npx",
       "windows": {
         "runtimeExecutable": "npx.cmd"
@@ -44,13 +66,18 @@
         "--config",
         "./ui5-mock.yaml",
         "--open",
+<<<<<<< HEAD
         "test/flpSandbox.html#project2-tile"
+=======
+        "test/flpSandbox.html#xlupload-display"
+>>>>>>> 7baec2c (added projects)
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
       "outputCapture": "std",
       "env": {
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+<<<<<<< HEAD
         "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/project2\"}"
       }
     },
@@ -59,6 +86,16 @@
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}/project2",
+=======
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/xl_upload\"}"
+      }
+    },
+    {
+      "name": "Start xl_upload Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/xl_upload",
+>>>>>>> 7baec2c (added projects)
       "runtimeExecutable": "npx",
       "windows": {
         "runtimeExecutable": "npx.cmd"
@@ -71,13 +108,18 @@
         "--config",
         "./ui5-local.yaml",
         "--open",
+<<<<<<< HEAD
         "test/flpSandbox.html#project2-tile"
+=======
+        "test/flpSandbox.html#xlupload-display"
+>>>>>>> 7baec2c (added projects)
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
       "outputCapture": "std",
       "env": {
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+<<<<<<< HEAD
         "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/project2\"}"
       }
     },
@@ -879,6 +921,9 @@
       "env": {
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
         "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/project4\"}"
+=======
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/xl_upload\"}"
+>>>>>>> 7baec2c (added projects)
       }
     }
   ]
