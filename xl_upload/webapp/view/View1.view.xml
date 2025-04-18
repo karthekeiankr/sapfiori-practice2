@@ -15,9 +15,14 @@
           width="300px"
           placeholder="Choose CSV or Excel file..." />
 
-        <Button text="Upload Data" press="onUploadData" />
+         <HBox class="sapUiSmallMarginTop" justifyContent="Start" alignItems="Center" renderType="Bare">
+          <Button text="Load Data (GET)" press="onLoadData" />
+          <Button text="Upload Data (POST)" press="onUploadData" class="sapUiTinyMarginBegin" />
+          <Button text="Update Selected (PUT)" press="onUpdateSelected" class="sapUiTinyMarginBegin" />
+          <Button text="Delete Selected (DELETE)" press="onDeleteSelected" class="sapUiTinyMarginBegin" />
+        </HBox>
 
-        <Table id="dataTable" items="{/fileData}">
+        <Table id="dataTable"  mode="MultiSelect" items="{/fileData}">
           <columns>
             <Column><Text text="ID" /></Column>
             <Column><Text text="NAME" /></Column>
@@ -26,9 +31,9 @@
           <items>
             <ColumnListItem>
               <cells>
-                <Text text="{Id}" />
-                <Text text="{Name}" />
-                <Text text="{City}" />
+                <Input value="{Id}"></Input>
+                <Input value="{Name}"></Input>
+                <Input value="{City}"></Input>
               </cells>
             </ColumnListItem>
           </items>

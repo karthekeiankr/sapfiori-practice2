@@ -67,7 +67,7 @@
        "type": "sap.ui.model.odata.v2.ODataModel",
     "settings": {
       "defaultBindingMode": "TwoWay",
-      "useBatch": false,
+      "useBatch": true,
       "serviceUrl": "/sap/opu/odata/sap/ZXL_UPLOAD_SRV/"
     }
       }
